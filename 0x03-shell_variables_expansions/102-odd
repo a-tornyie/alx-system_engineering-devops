@@ -1,2 +1,2 @@
 #!/bin/bash
-cat <input_file> | while read line; do echo "$line"; read line; done
+perl -lne 'print if $. % 2 ==1'
